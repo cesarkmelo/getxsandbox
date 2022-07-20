@@ -35,8 +35,8 @@ class ProfilePage extends StatelessWidget {
                   height: 10,
                 ),
                 CupertinoButton(
-                  child: const Text("Aceptar"),
                   onPressed: _.goBackWithData,
+                  child: const Text("Aceptar"),
                 )
               ],
             ),

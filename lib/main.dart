@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getsandbox/controllers/global_controller.dart';
 import 'package:getsandbox/pages/splash_page.dart';
 
 void main() {
@@ -9,9 +10,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Get.put(GlobalController());
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
