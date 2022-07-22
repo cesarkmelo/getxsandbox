@@ -17,8 +17,8 @@ class ReactivePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Obx(() => Text("Nombre: ${_.myPet.value.name}")),
-              Obx(() => Text("Edad: ${_.myPet.value.age}")),
+              Obx(() => Text("Nombre: ${_.myPet.name}")),
+              Obx(() => Text("Edad: ${_.myPet.age}")),
               TextButton(
                 onPressed: () {
                   _.setPet(lola);
